@@ -6,34 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:900|Cuprum" rel="stylesheet">
     <script
   src="https://code.jquery.com/jquery-3.3.1.slim.js"
   integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
   crossorigin="anonymous"></script>
+  
 </head>
 <body>
-    <header>Crystal Collector!</header>
-    <div id="instructions">Instructions</div>
-    <div id="targetdisplay"></div>
-    <div id="winlose">
-        <p id="windisplay">Wins: 0</p>
-        <p id="lossdisplay">Losses: 0</p>
-        <p id="announcement">Play</p>
+    <div class="wrapper">
+    <div class="row">
+    <header class="h1 text-center"><b>Crystal Collector</b></header>
     </div>
-    <div id="crystaldisplay">
-        <div>
-            <img id="gem1" src="assets/images/blue.jpg">
-            <img id="gem2" src="assets/images/green.jpg">
-            <img id="gem3" src="assets/images/purple.jpg">
-            <img id="gem4" src="assets/images/red.jpg">                        
+    <div class="text-center" id="instructions">
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score</p>
+        <p>You win the game by matching your total score to the random number. You lose the game if your total score goes above
+            the random number. </p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+    </div>
+    <div id="targetdisplay" class="h2 text-center"></div>
+    <div id="winlose" class="text-center">
+        <p class="h3" id="windisplay">Wins: 0</p>
+        <p class="h3" id="lossdisplay">Losses: 0</p>
+        <p class="h4" id="announcement">Click to Play!</p>
+    </div>
+    <div id="crystaldisplay" class="text-center">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <img class="col-md-2" id="gem1" src="assets/images/blue.jpg">
+            <img class="col-md-2" id="gem2" src="assets/images/green.jpg">
+            <img class="col-md-2" id="gem3" src="assets/images/purple.jpg">
+            <img class="col-md-2" id="gem4" src="assets/images/red.jpg">                        
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
     </div>
-    <div id="scoreis">Your current score is...</div>
-    <div id="scoredisplay">0</div>
+    <div class="h4 text-center" id="scoreis">Your current score is:</div>
+    <div id="scoredisplay" class="h2 text-center">0</div>
     <script src="assets/javascript/javascript.js"></script>
+    </div>
 </body>
 </html>

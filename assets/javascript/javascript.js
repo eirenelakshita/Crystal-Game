@@ -6,7 +6,6 @@ wins = 0;
 losses = 0;
 targetscore = Math.ceil(Math.random() * 101) + 19;
 currentscore = 0;
-var gems = [gem1,gem2,gem3,gem4]
 var gem1score = Math.ceil(Math.random() * 12);
 var gem2score = Math.ceil(Math.random() * 12);
 var gem3score = Math.ceil(Math.random() * 12);
